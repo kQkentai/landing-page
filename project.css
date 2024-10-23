@@ -1,0 +1,29 @@
+:root{
+  --background-color: #fff;
+  --color:#000;
+  --border-color: gray;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+section{
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.navbar-brand{
+  font-weight: bold;
+}
+.yo{
+  position: sticky;
+  top: 0;
+}
+img{
+  display: flex;
+  justify-content: center;
+}
