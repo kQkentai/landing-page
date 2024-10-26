@@ -1,29 +1,95 @@
-:root{
+:root {
   --background-color: #fff;
-  --color:#000;
+  --color: #000;
   --border-color: gray;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
+  font-family: 'Arial', sans-serif;
 }
-section{
-  padding: 20px;
+
+header .navbar {
+  background-color: var(--background-color);
+}
+
+section {
+  padding: 40px 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
-.navbar-brand{
-  font-weight: bold;
+
+.bg-light {
+  background-color: #f8f9fa;
 }
-.yo{
+
+h2 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+h4 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.yo {
   position: sticky;
   top: 0;
+  z-index: 10;
 }
-img{
+.hobbies{
+  animation: slide 10s linear infinite;
+  /* position: absolute; */
+  height: 200px;
+  width: 500px;
+}
+@keyframes slide {
+  0% {
+      transform: translateX(-100%); 
+  }
+  100% {
+      transform: translateX(100%); 
+  }
+}
+.slider {
+  position: relative;
+  width: 100vw; 
+  /*    */
+  overflow: hidden;
+  flex-direction: row;
   display: flex;
-  justify-content: center;
+  gap: 35px;
+}
+.card-body{
+  width: 400px;
+}
+.gojo{
+  box-shadow: 10px 10px 5px var(--color);
+  transition: box-shadow 2s;
+}
+.gojo:hover{
+  box-shadow: none;
 }
